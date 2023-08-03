@@ -32,9 +32,9 @@ const BillBoard = () => {
         <p className="
         text-white 
         text-1xl 
-        md:text-5xl 
         h-full 
         w-[50%] 
+        md:text-5xl 
         lg:text-6xl 
         font-bold 
         drop-shadow-xl">
@@ -46,8 +46,8 @@ const BillBoard = () => {
         md:text-lg 
         mt-3 
         md:mt-8 
-        w-[90%] 
-        md:w-[80%] 
+        w-[50%] 
+        md:w-[50%] 
         lg:w-[50%] 
         drop-shadow-xl
         ">
@@ -63,7 +63,7 @@ const BillBoard = () => {
             bg-opacity-30
             rounded-md 
             py-1 md:py-2
-            pxx-2 md:px-4      
+            px-2 md:px-5      
             w-auto
             text-xs lg:text-lg
             font-semibold
@@ -73,7 +73,7 @@ const BillBoard = () => {
             hover:bg-opacity-20
             transition
             ">
-            <AiOutlineInfoCircle className ="mr-1"/>
+            <AiOutlineInfoCircle className ="mr-1" size={25}/>
             More Info
           </button>
         </div>

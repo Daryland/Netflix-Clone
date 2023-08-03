@@ -1,9 +1,10 @@
 import { useCallback, useEffect, useState } from "react";
-import MobileMenu from "./MobileMenu";
-import NavbarItem from "./NavbarItem";
-
 import { BsChevronDown, BsSearch, BsBell } from 'react-icons/bs';
-import AccountMenu from "./AccountMenu";
+
+import AccountMenu from '@/components/AccountMenu';
+import MobileMenu from '@/components/MobileMenu';
+import NavbarItem from '@/components/NavbarItem';
+
 
 const TOP_OFFSET = 66;
 
@@ -48,10 +49,8 @@ const Navbar = () => {
         transition
         duration-500
         bg-zinc-900
-        bg-opacity-90
-        ${showBackground ? 'big-zinc-900 bg-opcaity-90' : ''}
-        `}
-       >
+        bg-opacity-50
+        ${showBackground ? 'big-zinc-900 bg-opacity-90' : ''}`}>
         <img className="h-4 lg:h-7" src="/images/logo.png" alt="Logo" />
         <div 
           className="
